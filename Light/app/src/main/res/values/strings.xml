@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Light</string>
+    <string name="red">Красный</string>
+    <string name="yellow">Жёлтый</string>
+    <string name="green">Зелёный</string>
+    <color name="greenColor">#FF00FF00</color>
+</resources>

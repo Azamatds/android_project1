@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenColor"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="171dp"
+        android:layout_height="262dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/red_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRedButtonClick"
+            android:layout_margin="15dp"
+            android:layout_marginTop="216dp"
+            android:text="@string/red"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+        <Button
+            android:id="@+id/yellow_button."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:onClick="onYellowButtonClick"
+            android:text="@string/yellow"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+        <Button
+            android:id="@+id/green_button."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onGreenButtonClick"
+            android:layout_margin="15dp"
+            android:text="@string/green"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="219dp"
+        android:layout_height="114dp"
+        android:text="Зеленый"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
